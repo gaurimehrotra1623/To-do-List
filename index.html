@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kranky&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <section class="todo">
-    <h2>To-do List</h2>
-    <div class="input">
-        <input type="text" class="input-field" id="todoInput" placeholder="Add a new task">
+      <h2>To-do list</h2>
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
         <button class="btn">Add</button>
-    </div>
-    <ul class="scroll">
+      </div>
+      <ul class="scroll">
         <li id="todoList"></li>
-    </ul>
-    <div>
-        <hr class="counter">
+      </ul>
+      <div>
+        <hr class="counter" />
         <div class="counter-container">
-            <p><span>0 </span>Items total</p>
-            <button id="deleteButton">Delete All</button>
-
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
         </div>
-    </div>
-
-</section>
-<footer>
-    <div class="footer">
-        <p class="made-by">Made By </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p class="made-by">Made By</p>
         <p class="author">Gauri Mehrotra</p>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
